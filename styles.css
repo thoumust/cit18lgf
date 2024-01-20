@@ -206,6 +206,7 @@ nav a.active{
   /*-----------------------------END OF HEADER CARD--------------------------------------*/
   .subtitle{
     color: #833ab4;
+    margin-right: 20px;
   }
   .subtitle span{
     color: #fcb900;
