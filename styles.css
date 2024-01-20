@@ -28,10 +28,11 @@ nav{
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-    margin: auto;
-    padding: 10px 60px 10px 10px;
-    position: sticky; top: 0;
-    background-color: white;
+  margin: auto;
+  padding: 10px 60px 10px 10px;
+  position: sticky; top: 0;
+  background-color: white;
+  z-index: 100;
     
 }
 .logo{
@@ -129,7 +130,7 @@ nav a.active{
 
   /*-----------------------------HEADER CARD--------------------------------------*/
   .card {
-    position: fixed;
+    position: relative;
     width: 1600px;
     height: 700px;
     background: #7b52b9;
@@ -143,7 +144,7 @@ nav a.active{
     cursor: pointer;
     margin: auto;
     margin-top: 20px;
-    margin-left: 170px;
+    margin-left: 120px;
     color: #ddc7ff;
   }
   .header-text{
@@ -166,10 +167,11 @@ nav a.active{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: bold;
-    background-color: #bda4e2;
+    background-color: #d0b9f3;
     transition: all 0.5s;
+    color: #fcb900;
   }
   
   .card::before {
@@ -193,7 +195,234 @@ nav a.active{
   }
   
   .card:hover:after {
-    content: "practiced graphic design and social media management, \autilizing my experience and knowledge in creating and executing successful social media campaigns,\adeveloping engaging content, and staying up to date with the latest trends. My goal is to increase brand awareness, and engagement while delivering exceptional results and exceeding goals for the company.";
+    content: "          Practiced graphic design and social media management, \autilizing my experience and knowledge in creating and executing\a successful social media campaigns,developing engaging content,\a and staying up to date with the latest trends. My goal is to increase\a brand awareness, and engagement while delivering exceptional\a results and exceeding goals for the company.";
     white-space: pre-wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
   /*-----------------------------END OF HEADER CARD--------------------------------------*/
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-item {
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+  }
+  .card4 {
+    width: 650px;
+    height: 354px;
+    border-radius: 4px;
+    background: #b3b6b6;
+    display: flex;
+    gap: 5px;
+    padding: .4em;
+  }
+  
+  .card4 p {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .5s;
+    background: #b3b6b6;
+    border: 1px solid #7b52b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+  }
+  
+  .card4 p:hover {
+    flex: 4;
+  }
+  
+  .card4 p span {
+    min-width: 14em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: #0f1113;
+    letter-spacing: .1em;
+  }
+  
+  .card4 p:hover span {
+    transform: rotate(0);
+  }
+
+.redes {
+  width: 80px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: fixed; /* Add fixed positioning */
+  top: 50%; /* Adjust the vertical position */
+  transform: translateY(-50%); /* Center the element vertically */
+ /* Adjust the horizontal position */
+}
+
+.redes a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  transition: all 0.2s ease-in-out;
+}
+
+.redes a svg {
+  width: 30px;
+  fill: #ffffff;
+}
+
+.redes .discord {
+  background-color: rgb(0, 60, 255);
+  border-radius: 0 0 10px 0;
+}
+
+.redes .instagram {
+  background: linear-gradient(45deg, #833ab4, #fd1d1d, #f56040);
+  border-radius: 0 10px 0 0;
+}
+
+.redes .github {
+  background-color: rgb(24, 22, 22);
+}
+
+.redes .twitter {
+  background-color: #000000;
+}
+
+.redes .facebook {
+  background-color: #006aff;
+}
+
+.redes a:hover {
+  width: 130%;
+  border-radius: 0 10px 10px 0;
+}
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: #ffffff;
+  border-top: 4px solid #7b52b9;
+  z-index: 0;
+}
+
+footer > p {
+  margin: 2rem;
+}
+
+footer i {
+  vertical-align: middle;
+}
+.btn1 {
+  width: 140px;
+  height: 56px;
+  overflow: hidden;
+  border: none;
+  color: #7b52b9;
+  background: none;
+  position: relative;
+  padding-bottom: 2em;
+  cursor: pointer;
+  margin-left: 1630px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.btn1 > div,
+.btn1 > svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.btn1:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  background: currentColor;
+  transition: transform 0.25s ease-out;
+}
+
+.btn1:hover:before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.btn1 .clone > *,
+.btn1 .text > * {
+  opacity: 1;
+  font-size: 1.3rem;
+  transition: 0.2s;
+  margin-left: 4px;
+}
+
+.btn1 .clone > * {
+  transform: translateY(60px);
+}
+
+.btn1:hover .clone > * {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.btn1:hover .text > * {
+  opacity: 1;
+  transform: translateY(-60px);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.btn1:hover .clone > :nth-child(1) {
+  transition-delay: 0.15s;
+}
+
+.btn1:hover .clone > :nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.btn1:hover .clone > :nth-child(3) {
+  transition-delay: 0.25s;
+}
+
+.btn1:hover .clone > :nth-child(4) {
+  transition-delay: 0.3s;
+}
+/* icon style and hover */
+.btn1 svg {
+  width: 20px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(-50deg);
+  transition: 0.2s ease-out;
+}
+
+.btn1:hover svg {
+  transform: translateY(-50%) rotate(-90deg);
+}
+
