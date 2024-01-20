@@ -131,7 +131,8 @@ nav a.active{
   /*-----------------------------HEADER CARD--------------------------------------*/
   .card {
     position: relative;
-    width: 1600px;
+    width: 100%;
+    max-width: 1600px;
     height: 700px;
     background: #7b52b9;
     display: flex;
@@ -425,4 +426,25 @@ footer i {
 .btn1:hover svg {
   transform: translateY(-50%) rotate(-90deg);
 }
-
+@media (max-width: 768px) {
+  .card {
+    height: auto; 
+    margin: 20px; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .header-text {
+    margin-top: 5%; 
+    font-size: 24px; 
+  }
+  
+  .card h1 {
+    font-size: 40px; 
+  }
+  
+  .card::before,
+  .card::after {
+    font-size: 20px; 
+  }
+}
