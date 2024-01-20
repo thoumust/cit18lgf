@@ -194,5 +194,6 @@ nav a.active{
   
   .card:hover:after {
     content: "practiced graphic design and social media management, \autilizing my experience and knowledge in creating and executing successful social media campaigns,\adeveloping engaging content, and staying up to date with the latest trends. My goal is to increase brand awareness, and engagement while delivering exceptional results and exceeding goals for the company.";
-  }
+    white-space: pre-wrap;
+}
   /*-----------------------------END OF HEADER CARD--------------------------------------*/
