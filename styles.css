@@ -204,7 +204,12 @@ nav a.active{
     transform: translate(-50%, -50%);
 }
   /*-----------------------------END OF HEADER CARD--------------------------------------*/
-
+  .subtitle{
+    color: #833ab4;
+  }
+  .subtitle span{
+    color: #fcb900;
+  }
   .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
